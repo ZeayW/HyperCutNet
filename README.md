@@ -38,8 +38,8 @@ This project requires **PyTorch** and **DGL (Deep Graph Library)**. We recommend
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/your-username/HyperCutGNN.git
-    cd HyperCutGNN
+    git clone https://github.com/your-username/HyperCutNet.git
+    cd HyperCutNet
     ```
 
 2.  **Create the environment**
