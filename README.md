@@ -1,4 +1,4 @@
-# ParSGCN-Extension: Circuit Net Connectivity Prediction
+# HyperCutNet: Net Cut Connectivity Prediction
 
 This project implements a **multi-stage Heterogeneous Graph Neural Network (GNN)** to predict the connectivity or cut probability of nets in graphs.
 
