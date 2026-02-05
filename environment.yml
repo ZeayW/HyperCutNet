@@ -1,0 +1,34 @@
+name: gnn_design
+channels:
+  - pytorch
+  - nvidia
+  - dglteam
+  - conda-forge
+  - defaults
+dependencies:
+  # 1. 基础工具
+  - python=3.10
+  - numpy>=1.21
+  - scipy
+  - networkx
+  - tqdm              # 推荐安装，用于显示训练进度条
+  - pip
+
+  # 2. PyTorch (带 CUDA 12.1 支持)
+  # 如果你是 Mac 或没有 GPU，请参考下方的 CPU 版本说明
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+
+  # 3. 使用 Pip 安装 DGL (推荐方式)
+  # DGL 的 Conda 包更新有时滞后，Pip 配合官方 Wheel 源最稳定
+  - pip:
+      # 安装支持 CUDA 12.1 的 DGL
+      # 如果报错，请确保你的显卡驱动支持 CUDA 12.1
+      - dgl -f https://data.dgl.ai/wheels/cu121/repo.html
+      
+      # 如果你需要可视化或其他辅助功能
+      # - matplotlib 
+      # - scikit-learn
+
